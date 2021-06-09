@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CoffeePOS</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Scroll-to-top.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background-color: #e7e5df;">
+    <div><div role="dialog" tabindex="-1" class="modal fade" id="modalScrollpy">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+                    
+            <div class="modal-header">
+                <h4 class="modal-title">Nueva Orden</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+        <nav id="navbar-example2" class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#"></a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#DatosGenerales">Datos Generales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Resumen">Resumen</a>
+            </li>
+          </ul>
+        </nav>
+            
+
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0" id="scroll">
+            <div class="modal-body" id="Paso1">
+                <h4 class="modal-title" id=DatosGenerale>Datos Generales</h4>
+                <div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label">Número de Orden:</label></div>
+                        <div class="col"><label class="col-form-label">1</label></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label">Mesero:</label></div>
+                        <div class="col"><input type="text" /></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label">Cliente:</label></div>
+                        <div class="col"><input type="text" /></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label">Número de Mesa:</label></div>
+                        <div class="col"><input type="text" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-header">
+                <h4 class="modal-title" id=Productos>Productos</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+            <div class="modal-body" id="Paso2">
+                <div></div>
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item"><a class="nav-link active" href="#">Aperitivos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Plato Fuerte</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Bebida</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <div class="row">
+                                <div class="col" style="width: 227px;height: 227px;">
+                                    <div class="card">
+                                        <div class="card-body" style="width: 190px;height: 200px;padding: 5px;">
+                                            <h4 class="card-title">Aperitivo #1</h4><img src="aperitivos-faciles-rapidos-champinones-huevos-codorniz_692d9101_1000x1500.jpg" style="width: 180px;height: 150px;" /><span class="badge badge-primary" style="margin: 5px;"> + </span>
+                                            <span
+                                                class="badge badge-primary" style="margin: 5px;"> 0 </span><span class="badge badge-primary" style="margin: 5px;"> - </span><span class="badge badge-primary"></span><span class="badge badge-primary"></span></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body" style="width: 190px;height: 200px;padding: 5px;">
+                                            <h4 class="card-title">Aperitivo #2</h4><img src="aperitivos-faciles-rapidos-champinones-huevos-codorniz_692d9101_1000x1500.jpg" style="width: 180px;height: 150px;" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body" style="width: 190px;height: 200px;padding: 5px;">
+                                            <h4 class="card-title">Aperitivo #3</h4><img src="aperitivos-faciles-rapidos-champinones-huevos-codorniz_692d9101_1000x1500.jpg" style="width: 180px;height: 150px;" /></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body" style="width: 190px;height: 200px;padding: 5px;">
+                                            <h4 class="card-title">Aperitivo #4</h4><img src="aperitivos-faciles-rapidos-champinones-huevos-codorniz_692d9101_1000x1500.jpg" style="width: 180px;height: 150px;" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="modal-title" id=Resumen>Resumen</h4>
+            </div>
+            <div class="modal-body" id="paso3">
+                <div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label">Número de Orden:</label></div>
+                        <div class="col"><label class="col-form-label">1</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label">Mesero:</label></div>
+                        <div class="col"><label class="col-form-label">209</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label">Número de Mesa:</label></div>
+                        <div class="col"><label class="col-form-label">21</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="col-form-label">Cliente:</label></div>
+                        <div class="col"><label class="col-form-label">Lucrecia</label></div>
+                    </div>
+                    <h5>Detalle </h5>
+                    <div class="row text-primary" style="color: rgb(74,13,204);background-color: #c0f1f8;">
+                        <div class="col"><label class="col-form-label">Id</label></div>
+                        <div class="col"><label class="col-form-label">Cant.</label></div>
+                        <div class="col"><label class="col-form-label">Producto</label></div>
+                        <div class="col"><label class="col-form-label">P/U</label></div>
+                        <div class="col"><label class="col-form-label">SubTotal</label></div>
+                    </div>
+                    <div class="row text-primary" style="color: rgb(74,13,204);">
+                        <div class="col"><label class="col-form-label">01</label></div>
+                        <div class="col"><label class="col-form-label">1</label></div>
+                        <div class="col"><label class="col-form-label">Golden</label></div>
+                        <div class="col"><label class="col-form-label">$1.00</label></div>
+                        <div class="col"><label class="col-form-label">$1.00</label></div>
+                    </div>
+                    <div class="row text-primary" style="color: rgb(74,13,204);">
+                        <div class="col"><label class="col-form-label">02</label></div>
+                        <div class="col"><label class="col-form-label">4</label></div>
+                        <div class="col"><label class="col-form-label">Entradas</label></div>
+                        <div class="col"><label class="col-form-label">$2.00</label></div>
+                        <div class="col"><label class="col-form-label">$8.00</label></div>
+                    </div>
+                    <div class="row text-primary" style="color: rgb(74,13,204);">
+                        <div class="col"><label class="col-form-label">03</label></div>
+                        <div class="col"><label class="col-form-label">2</label></div>
+                        <div class="col"><label class="col-form-label">Pilsener</label></div>
+                        <div class="col"><label class="col-form-label">$1.00</label></div>
+                        <div class="col"><label class="col-form-label">$2.00</label></div>
+                    </div>
+                    <div class="row text-primary" style="color: rgb(74,13,204);">
+                        <div class="col"><label class="col-form-label">04</label></div>
+                        <div class="col"><label class="col-form-label">1</label></div>
+                        <div class="col"><label class="col-form-label">Agua Cri</label></div>
+                        <div class="col"><label class="col-form-label">$0.75</label></div>
+                        <div class="col"><label class="col-form-label">$0.75</label></div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal">Cancelar</button><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#orden2">Siguiente</button></div>
+            </div>
+</div>
+                
+          </div>
+    </div>
+</div></div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="nuevoProducto">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Nuevo Producto</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body" id="nuevoProducto">
+                    <h5 class="modal-title">Datos Generales</h5>
+                    <div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">ID:</label></div>
+                            <div class="col"><label class="col-form-label">1</label></div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Categoria:</label></div>
+                            <div class="col">
+                                <ul class="list-group"></ul><select>
+    <option value="">Seleccione Categoria</option>
+	<option value="BE">Bebidas</option>
+	<option value="PO">Postres</option>
+	<option value="AP">Aperitivos</option>
+	<option value="AR">Plato Fuerte</option>
+	<option value="CA">Combos</option>
+	
+</select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Producto:</label></div>
+                            <div class="col"><input type="text"></div>
+                        </div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Precio:</label></div>
+                            <div class="col"><input type="text"></div>
+                        </div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Preparado:</label></div>
+                            <div class="col"><input type="checkbox" style="width: 20px;height: 20px;"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button><button class="btn btn-primary" type="button" data-toggle="modal" data-dismiss="modal">Guardar</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modificarProducto">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modificar Producto</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body" id="nuevoProducto">
+                    <h5 class="modal-title">Datos Generales</h5>
+                    <div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">ID:</label></div>
+                            <div class="col"><label class="col-form-label">1</label></div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Categoria:</label></div>
+                            <div class="col">
+                                <ul class="list-group"></ul><select>
+    <option value="">Seleccione Categoria</option>
+	<option value="BE">Bebidas</option>
+	<option value="PO">Postres</option>
+	<option value="AP">Aperitivos</option>
+	<option value="AR">Plato Fuerte</option>
+	<option value="CA">Combos</option>
+	
+</select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Producto:</label></div>
+                            <div class="col"><input type="text"></div>
+                        </div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Descripción:</label></div>
+                            <div class="col"><input type="text"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button><button class="btn btn-primary" type="button" data-toggle="modal" data-target="" data-dismiss="modal">Guardar</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="opciones">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Producto</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body" id="nuevoProducto">
+                    <h5 class="modal-title">Datos Generales</h5>
+                    <div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">ID:</label></div>
+                            <div class="col"><label class="col-form-label">1</label></div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Categoria:</label></div>
+                            <div class="col">
+                                <ul class="list-group"></ul><label>Bebidas</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Producto:</label></div>
+                            <div class="col"><label class="col-form-label">Bebida #1</label></div>
+                        </div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Descripción:</label></div>
+                            <div class="col"><label class="col-form-label">Bebida #1</label></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal">Cancelar</button><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modificarProducto" data-dismiss="modal">Modificar</button><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#eliminarProducto" data-dismiss="modal">Eliminar</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="eliminarProducto">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">¿Eliminar Producto?</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body" id="nuevoProducto">
+                    <h5 class="modal-title">Datos Generales</h5>
+                    <div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">ID:</label></div>
+                            <div class="col"><label class="col-form-label">1</label></div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Categoria:</label></div>
+                            <div class="col">
+                                <ul class="list-group"></ul><label>Bebidas</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Producto:</label></div>
+                            <div class="col"><label class="col-form-label">Bebida #1</label></div>
+                        </div>
+                        <div class="row" style="padding: 5px;">
+                            <div class="col"><label class="col-form-label">Descripción:</label></div>
+                            <div class="col"><label class="col-form-label">Bebida #1</label></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button><button class="btn btn-danger" type="button" data-toggle="modal" data-target="" data-dismiss="modal">Eliminar</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 40px;">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="background-color: #e7bb41;">
+            <div class="container"><img class="d-none d-md-inline" src="assets/img/CoffeeShop.png" width="75"><a class="navbar-brand text-right text-xl-center" href="#">&nbsp; &nbsp;Sistema POS</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="MenuProductos.html">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Orden.html">Ordenes</a></li>
+                        <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#">Administración</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="Categorias.html">Categorias</a><a class="dropdown-item" href="Productos.html">Productos</a><a class="dropdown-item" href="#"></a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container" id="AdminProductos" style="padding: 10px 0px 0px;">
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item" href="#" v-on:click.prevent="categoriaSelected=Cate.idCategoria;" v-for="Cate in categorias"><a class="nav-link" href="#" v-on:click.prevent="categoriaSelected=Cate.idCategoria;" v-bind:class="{ 'font-weight-bold': categoriaSelected==Cate.idCategoria,  'text-dark': categoriaSelected==Cate.idCategoria }" style="color: #393e41;">{{ Cate.nombreCategoria }}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-right"><label>Buscar: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label><input type="text" v-model="textoBusqueda">
+                <div class="alert alert-success collapse" role="alert" id="miAlerta"><span><strong>{{ alerta.titulo }} :</strong>&nbsp;{{ alerta.mensaje }}.</span><i class="fa fa-close close" v-on:click="cerrarAlerta();"></i></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" v-for="(elProd, index) in productos" v-show="elProd.idCategoria==categoriaSelected &amp;&amp; buscar(index)" v-bind:class="{ 'font-weight-bold' : productoSelected==index }" style="padding-top: 10px;">
+                <div class="card" style="width: 450px;background-color: #e7e5df;">
+                    <div class="card-body" style="width: 400px;">
+                        <h4 class="card-title"><br>{{ elProd.nombreProducto }}<br><br></h4>
+                        <h6 class="text-muted card-subtitle mb-2"><br>{{ nombreCategoria(elProd.idCategoria) }}<br><br></h6>
+                        <p class="card-text"><br>$ {{ elProd.precio }}<br><br></p>
+                        <p class="card-text"><i class="fa fa-motorcycle" v-show="elProd.esPreparado==0"></i><i class="fas fa-hamburger" v-show="elProd.esPreparado==1"></i><br><br><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modalAgregar">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Agregar Producto</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body"><div class="input-group">
+    <div class="input-group-prepend"><span class="input-group-text">Categoría:</span></div>
+    
+    <select v-model="nuevoProducto.idCategoria">
+    <option v-for="option in categorias" v-bind:value="option.idCategoria">
+        {{option.nombreCategoria}}
+    </option>
+</select>
+
+</div>
+                        <div class="input-group">
+                            <div class="input-group-prepend"><span class="input-group-text">Nombre:</span></div><input class="form-control" type="text" v-model="nuevoProducto.nombreProducto">
+                            <div class="input-group-append"></div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend"><span class="input-group-text">Precio:</span></div><input class="form-control" type="text" v-model="nuevoProducto.precio">
+                            <div class="input-group-append"></div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend"><span class="input-group-text">Es Preparado:</span></div>
+                            <div class="input-group-append"><input type="checkbox" v-model="nuevoProducto.esPreparado" size="80px" style="margin-top: 15px;margin-left: 25px;"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cancelar</button><button class="btn btn-primary" type="button" data-dismiss="modal" v-on:click="agregarProducto">Agregar</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-dark" role="dialog" tabindex="-1" id="modalModificar">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modificar Producto</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body"><div class="input-group">
+    <div class="input-group-prepend"><span class="input-group-text">Categoría:</span></div>
+    
+    <select v-model="productos[productoSelected].idCategoria">
+    <option v-for="option in categorias" v-bind:value="option.idCategoria">
+        {{option.nombreCategoria}}
+    </option>
+</select>
+
+</div>
+                        <div class="input-group">
+                            <div class="input-group-prepend"><span class="input-group-text">Nombre:</span></div><input class="form-control" type="text" v-model="productos[productoSelected].nombreProducto">
+                            <div class="input-group-append"></div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend"><span class="input-group-text">Precio:</span></div><input class="form-control" type="text" v-model="productos[productoSelected].precio">
+                            <div class="input-group-append"></div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend"><span class="input-group-text">Es Preparado:</span></div>
+                            <div class="input-group-append"><input type="checkbox" v-model="productos[productoSelected].esPreparado" size="80px" style="margin-top: 15px;margin-left: 25px;"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cancelar</button><button class="btn btn-primary" type="button" data-dismiss="modal" v-on:click="modificarProducto">Modificar</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modalEliminar">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger text-white">
+                        <h4 class="modal-title">Eliminar Producto {{ this.productos[this.productoSelected].idProducto&nbsp;}}</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cancelar</button><button class="btn btn-primary btn-danger" type="button" data-dismiss="modal" v-on:click="eliminarProducto">Eliminar</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/js/pcategorias.js"></script>
+    <script src="assets/js/pordens.js"></script>
+    <script src="assets/js/productos.js"></script>
+    <script src="assets/js/Scroll-to-top.js"></script>
+    <script src="assets/js/vueOrdenes.js"></script>
+</body>
+
+</html>

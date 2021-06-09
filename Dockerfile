@@ -2,6 +2,6 @@ FROM centos
 
 RUN yum install httpd -y
 
-COPY Poema /var/www/html
+COPY Cofee /var/www/html
 
 CMD apachectl -DFOREGROUND
